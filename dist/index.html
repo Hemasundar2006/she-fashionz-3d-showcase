@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="SHE FASHIONZ — a cinematic silk saree showroom experience.">
+  <meta name="theme-color" content="#240b11">
+  <title>SHE FASHIONZ — Woven for your moment</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="vendor/three.min.js" defer></script>
+  <script src="gallery.js" defer></script>
+</head>
+<body class="intro-active">
+  <div class="brand-opening" aria-label="SHE FASHIONZ — The Silk Rooms">
+    <img class="brand-opening__silk" src="assets/opening-maroon-silk.png" alt="Deep maroon Kanchipuram silk with an antique-gold zari border">
+    <div class="brand-opening__shade" aria-hidden="true"></div>
+    <div class="brand-opening__monogram" aria-hidden="true">SF</div>
+    <div class="brand-opening__copy">
+      <p>THE SILK ROOMS</p>
+      <h1><span>SHE</span><em>FASHIONZ</em></h1>
+      <i aria-hidden="true"></i>
+      <h2>Elegance, woven into every fold.</h2>
+      <small>KANCHIPURAM SILKS · TIMELESS DRAPES</small>
+    </div>
+    <button class="brand-opening__enter" type="button" data-opening-enter>Enter the collection <span>↗</span></button>
+  </div>
+  <noscript><style>.brand-opening{display:none!important}body{overflow:auto!important}</style></noscript>
+  <div class="page-progress" aria-hidden="true"><i></i></div>
+  <header class="nav-shell" aria-label="Primary navigation">
+    <a class="brand" href="#home"><span class="brand-mark">SF</span><span>SHE FASHIONZ<small>THE SILK ROOMS</small></span></a>
+    <nav><a href="#archive">Archive</a><a href="#try-look">Try the look</a><a href="#pick">Pick a silk</a><a href="#rack">The rack</a><a href="#muse">The muse</a><a href="#bridal">Bridal</a></nav>
+    <div class="nav-actions"><button class="icon-button" data-wishlist aria-label="Open wishlist">♡</button><button class="bag-button" aria-label="Shopping bag">Bag <b data-bag-count>0</b></button><a class="nav-cta" href="#visit">Visit the store <span>↗</span></a></div>
+    <button class="menu-button" aria-expanded="false" aria-label="Open navigation">☰</button>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/showroom.webp" alt="Heritage-inspired saree showroom with silk displays">
+      <canvas id="silk-canvas" aria-hidden="true"></canvas><div class="hero-shade"></div>
+      <div class="hero-copy reveal"><p class="kicker light">KANCHI SILK · GOLD ZARI · CRAFTED IN INDIA</p><h1 id="hero-title">Woven for<br><em>your moment.</em></h1><p class="hero-intro">A modern boutique with vintage charm. Discover luminous silks, bridal drapes and personal styling from SHE FASHIONZ.</p><div class="button-row"><a class="button wine" href="#try-look">Try the look <span>↗</span></a><a class="button pearl" href="#rack">Browse the rack <span>↘</span></a></div></div>
+      <div class="hero-note"><span>01</span><p>Scroll to enter<br>the silk rooms</p><i>↓</i></div>
+      <div class="ticker" aria-label="Featured collections"><div>PURE ZARI <b>✦</b> BRIDAL SILKS <b>✦</b> KANCHI ICONS <b>✦</b> MEENAKARI <b>✦</b> PERSONAL STYLING <b>✦</b> PURE ZARI <b>✦</b> BRIDAL SILKS <b>✦</b> KANCHI ICONS <b>✦</b></div></div>
+    </section>
+    <section class="section archive" id="archive">
+      <div class="section-heading reveal"><div><p class="kicker">THE SHE FASHIONZ ARCHIVE</p><h2>Six moods.<br><em>Timeless drapes.</em></h2></div><p>Woven by hand, worn for a lifetime. Six silk stories from quiet mornings to festive evenings.</p></div>
+      <div class="mood-grid">
+        <article class="mood"><div class="temple-window"><img src="assets/lifestyle/story-1.webp" alt="Woman in maroon silk in a heritage courtyard"></div><h3>Wedding Edit</h3><span>01</span></article>
+        <article class="mood"><div class="temple-window"><img src="assets/lifestyle/story-2.webp" alt="Woman in teal silk beside temple architecture"></div><h3>Kanchi Icons</h3><span>02</span></article>
+        <article class="mood"><div class="temple-window"><img src="assets/lifestyle/story-3.webp" alt="Woman in ivory silk near a window"></div><h3>Golden Hour</h3><span>03</span></article>
+        <article class="mood"><div class="temple-window"><img src="assets/lifestyle/story-4.webp" alt="Woman in plum silk in an old city lane"></div><h3>Evening Élan</h3><span>04</span></article>
+        <article class="mood"><div class="temple-window"><img src="assets/lifestyle/story-5.webp" alt="Two women sharing a festive moment"></div><h3>Festive Radiance</h3><span>05</span></article>
+        <article class="mood"><div class="temple-window"><img src="assets/lifestyle/story-6.webp" alt="Bride in vermilion silk"></div><h3>Bridal Vows</h3><span>06</span></article>
+      </div>
+    </section>
+    <section class="section look-section" id="try-look">
+      <div class="look-stage"><div class="look-copy reveal"><p class="kicker">STYLED HEAD TO TOE</p><h2>Try the <em>look.</em></h2><p>Eight full looks move in a continuous loop. Drag or use the arrows to take control.</p></div><div class="look-carousel" id="look-carousel" aria-label="Styled saree looks"></div><div class="look-nav"><button data-look-prev aria-label="Previous look">←</button><span><b data-look-count>01</b> / 08 · <i data-look-name>Ivory Rose</i></span><small>Auto loop · drag to explore</small><button data-look-next aria-label="Next look">→</button></div></div>
+      <aside class="look-panel"><p class="kicker">IN THIS LOOK</p><div id="look-pieces"></div><div class="bundle"><p>Complete the look<small>Bundle of 4 pieces · save 10%</small></p><strong data-bundle-price>₹42,400</strong></div><button class="button wine wide" data-add-look>Add full look to bag <span>＋</span></button></aside>
+    </section>
+    <section class="section pick-section" id="pick"><div class="section-heading compact reveal"><div><p class="kicker">THE COLOUR ROOM</p><h2>Pick a <em>silk.</em></h2></div><p>Tilt a card. Press it. Poke the silk. Every piece is an illustrative concept preview.</p></div><div class="silk-deck" id="silk-deck"></div><div class="deck-hint"><span>← Drag the rail</span><span>Tap a card to preview ↗</span></div></section>
+    <section class="section rack-section" id="rack"><div class="center-heading reveal"><p class="kicker">THE COLLECTION</p><h2>Every silk, <em>on the rail.</em></h2></div><div class="filters" role="group" aria-label="Filter collection"><button class="active" data-filter="all">All pieces <b>9</b></button><button data-filter="silk">Silk Sarees <b>4</b></button><button data-filter="bridal">Bridal <b>3</b></button><button data-filter="meenakari">Meenakari <b>2</b></button></div><div class="rack"><div class="rack-rod"></div><div class="hangers" id="hangers"></div></div><div class="rack-footer"><span>Explore the collection · 9 pieces</span><span>Concept collection · AI-generated studio imagery</span></div></section>
+    <section class="section muse-film" id="muse"><div class="film-strip film-left" aria-hidden="true"><img src="assets/lifestyle/story-1.webp" alt=""><img src="assets/lifestyle/story-4.webp" alt=""><img src="assets/lifestyle/story-3.webp" alt=""></div><div class="film-centre reveal"><p class="kicker">THE MUSE FILM</p><h2>Feel the <em>drape.</em></h2><div class="film-frame"><img id="film-image" src="assets/lifestyle/story-2.webp" alt="A cinematic saree film preview"><div class="film-grain"></div><button class="play-button" data-film-play aria-label="Play visual story">▶</button><span class="sound-pill">VISUAL STORY · 00:18</span><div class="film-progress"><i></i></div></div><a class="button wine" href="#rack">Purchase the collection <span>↗</span></a></div><div class="film-strip film-right" aria-hidden="true"><img src="assets/lifestyle/story-5.webp" alt=""><img src="assets/lifestyle/story-6.webp" alt=""><img src="assets/lifestyle/story-2.webp" alt=""></div></section>
+    <section class="section reel-section" id="reels"><canvas id="reel-canvas" aria-hidden="true"></canvas><div class="section-heading compact reveal"><div><p class="kicker">THE MUSE REELS</p><h2>Silk, <em>in motion.</em></h2></div><p>Five drapes imagined in lamp rooms, courtyards and old-city lanes. Use the controls to turn the arc.</p></div><div class="reel-deck" id="reel-deck"></div><div class="reel-controls"><button data-reel-prev aria-label="Previous reel">←</button><button data-reel-play aria-label="Pause reels">Ⅱ</button><button data-reel-next aria-label="Next reel">→</button></div></section>
+    <section class="section bridal-section" id="bridal"><div class="center-heading reveal"><p class="kicker">FOR THE MUHURTHAM AND EVERY VOW AFTER</p><h2>The Bridal <em>Collection</em></h2></div><div class="bridal-carousel" id="bridal-carousel"></div><div class="bridal-copy"><p class="kicker" data-bridal-note>PURE KANCHI · ANTIQUE GOLD PALLU</p><h3 data-bridal-name>Vermilion Vows</h3><strong data-bridal-price>₹35,500</strong><div><button data-bridal-prev aria-label="Previous bridal saree">←</button><button class="button wine" data-add-bridal>Add to bag ＋</button><button class="heart" aria-label="Add bridal saree to wishlist">♡</button><button data-bridal-next aria-label="Next bridal saree">→</button></div></div></section>
+    <section class="visit-section" id="visit"><p class="kicker light">PERSONAL SHOPPING · WHOLESALE · OCCASION STYLING</p><h2>Find the silk that<br><em>feels like you.</em></h2><p>Share the occasion, colour and budget. We’ll help you find a matching piece from the latest collection.</p><a class="button pearl" data-whatsapp>Start a WhatsApp consultation <span>↗</span></a></section>
+  </main>
+  <footer><a class="brand" href="#home"><span class="brand-mark">SF</span><span>SHE FASHIONZ<small>THE SILK ROOMS</small></span></a><p>Concept website for SHE FASHIONZ<br>Product availability to be confirmed.</p><div><a href="https://www.instagram.com/she_fashionzoffl/" target="_blank" rel="noopener">Instagram ↗</a><a href="#home">Back to top ↑</a></div></footer>
+  <dialog id="product-dialog"><button class="dialog-close" aria-label="Close product preview">Close ×</button><div class="dialog-visual"><div class="detail-hanger"></div><img id="dialog-image" alt=""></div><div class="dialog-copy"><p class="kicker">SHE FASHIONZ · CONCEPT PREVIEW</p><h2 id="dialog-name"></h2><p id="dialog-description"></p><strong id="dialog-price"></strong><div class="sizes"><span>Select a size</span><button>34</button><button>36</button><button>38</button><button>40</button><button>42</button></div><div class="button-row"><a class="button wine" id="dialog-enquire">See availability ↗</a><button class="heart" aria-label="Add to wishlist">♡</button></div></div></dialog>
+  <div class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
